@@ -12,3 +12,9 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+mink:
+    base_url:   http://www.symfony-madrid.dev/app_test.php
+    default_session:    goutte
+    goutte:     ~
+    sahi:       ~
