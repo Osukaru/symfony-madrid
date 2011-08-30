@@ -1,0 +1,92 @@
+****************************************************
+*** Instalación y configuración de KnpMenuBundle ***
+****************************************************
+
+1. Añadir el bundle al archivo deps
+--------------------------------
+[MenuBundle]
+    git=https://github.com/knplabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+--------------------------------
+
+2. Registrar el bundle en el archivo app/autoload.php
+--------------------------------
+    'Knp'                       => __DIR__.'/../vendor/bundles',
+--------------------------------
+
+3. Registrar el bundle en el archivo app/AppKernel.php
+--------------------------------
+		new Knp\Bundle\MenuBundle\KnpMenuBundle(),	
+--------------------------------
+
+4. Instalar el bundle
+$ php bin/vendors install
+
+5. Crear una clase MainMenu en WebsiteBundle
+--------------------------------src/MyVendor/MyBundle/Menu/MainMenu.php
+<?php
+
+namespace SFM\WebsiteBundle\Menu;
+
+use Knp\Bundle\MenuBundle\Menu;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Router;
+
+class MainMenu extends Menu
+{ 
+    /**
+     * @param Request $request 
+     * @param Router $router   
+     */
+    public function __construct(Request $request, Router $router)
+    {
+        parent::__construct();
+
+        $this->setCurrentUri($request->getRequestUri());
+
+        $this->addChild('Home', $router->generate('homepage')); 
+        // ... add more children        
+    } 
+}  
+--------------------------------
+
+6. Crear un servicio Menu
+--------------------------------src/MyVendor/MyBundle/Resources/config/menu.xml
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="menu.main.class">SFM\WebsiteBundle\Menu\MainMenu</parameter>
+    </parameters>
+
+    <services>
+        <service id="menu.main" class="%menu.main.class%" scope="request">
+            <tag name="knp_menu.menu" alias="main" />
+            <argument type="service" id="request" />
+            <argument type="service" id="router" />
+        </service>
+    </services>     
+
+</container>                   
+--------------------------------
+
+7. Importar la configuración del Bundle en el archivo app/config/config.yml
+--------------------------------
+imports:
+    - { resource: "@SFMWebsiteBundle/Resources/config/menu.xml" }
+--------------------------------
+
+8. Habilitar la generación del menú con Twig en el archivo app/config/config.yml
+--------------------------------
+knp_menu:
+    twig: true
+--------------------------------
+
+9. Renderizar el menu en una plantilla twig
+--------------------------------
+{{ knp_menu('main') }}
+--------------------------------
+

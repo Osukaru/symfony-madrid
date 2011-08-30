@@ -1,0 +1,32 @@
+*****************************
+*** Creación de un Bundle ***
+*****************************
+
+1. Se ehecuta la tarea para la creación del Bundle
+$ php app/console generate:bundle
+
+2. Se responden las preguntas que genera la tarea:
+
+Bundle namespace: SFM/WebsiteBundle
+Bundle name [SFMWebsiteBundle]: 
+Target directory [/home/osukaru/Proyectos/symfony-madrid/src]:
+Configuration format (yml, xml, php, or annotation) [annotation]: 
+Do you want to generate the whole directory structure [no]? 
+Do you confirm generation [yes]? 
+Confirm automatic update of your Kernel [yes]? 
+Confirm automatic update of the Routing [yes]?
+
+3. Borrar la cache de producción (configurar los permisos mediante listas ACL)
+--------------------------------
+$ rm -rf app/cache/*
+$ rm -rf app/logs/*
+
+$ sudo setfacl -R -m u:www-data:rwx -m u:nombre_usuario:rwx app/cache app/logs
+$ sudo setfacl -dR -m u:www-data:rwx -m u:nombre_usuario:rwx app/cache app/logs
+--------------------------------
+$ php app/console cache:clear --env=prod --no-debug
+
+4. Probar la aplicación
+Desarrollo: http://www.symfony-madrid.dev/app_dev.php/hello/Osukaru
+Producción: http://www.symfony-madrid.dev/app.php/hello/Osukaru
+

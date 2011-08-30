@@ -1,0 +1,43 @@
+***********************************************************
+*** 10 primeros pasos para comenzar un proyecto Symfony ***
+***********************************************************
+
+1. Descargar Symfony Standard Edition sin vendors
+2. Descomprimir y renombrar la carpeta generada con el nombvre symfony-madrid
+3. Crear un archivo .gitignore en el directorio raiz del proyecto con el siguiente contenido:
+$ vim .gitignore
+--------------------------------
+/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+/app/config/parameters.ini
+#Si trabajamos con netbeans quitamos el directorio de proyecto
+nbproject/
+#Si trabajamos con emacs
+*~
+#Si trabajamos con vim
+*.swp
+--------------------------------
+
+4. Copiar app/config/parameters.ini en app/config/parameters.ini.dist
+$ cp app/config/parameters.ini app/config/parameters.ini.dist
+
+5. Inicializar el repositorio git
+$ git init
+
+6. Añadir todos los archivos al repositorio git
+$ git add .
+
+7. Realizar el commit inicial
+git commit -m "Symfony Standard Edition 2.0.1"
+
+8. Instalar los verndors
+$ php bin/vendors install
+
+9. Añadir el repositorio remoto de github
+$ git remote add origin git@github.com:symfony-madrid/symfony-madrid.git
+
+10. Realizar el primer push al repositorio remoto
+$ git push -u origin master

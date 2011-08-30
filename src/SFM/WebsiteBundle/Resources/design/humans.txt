@@ -1,0 +1,18 @@
+/* TEAM */
+	Web designer: Óscar López
+	Twitter: @Osukaru80
+	From: Madrid, Spain
+
+/* THANKS */
+
+	Design based on a free template distributed by http://freehtml5templates.com/
+		
+
+/* SITE */
+	Last update:2011/08/30
+	Language: Castellano
+	Doctype: HTML5
+	Framework: Symfony
+
+
+              

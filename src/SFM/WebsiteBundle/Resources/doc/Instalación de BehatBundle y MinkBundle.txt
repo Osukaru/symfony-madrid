@@ -1,0 +1,82 @@
+***********************************************
+*** Instalación de BehatBundle y MinkBundle ***
+***********************************************
+
+1. Añadir las dependencias necesarias al archivo deps
+--------------------------------
+[gherkin]
+    git=https://github.com/Behat/Gherkin.git
+    target=/behat/gherkin
+
+[behat]
+    git=https://github.com/Behat/Behat.git
+    target=/behat/behat
+
+[BehatBundle]
+    git=https://github.com/Behat/BehatBundle.git
+    target=/bundles/Behat/BehatBundle
+
+[mink]
+    git=https://github.com/Behat/Mink.git
+    target=/behat/mink
+
+[goutte]
+    git=https://github.com/fabpot/Goutte.git
+    target=/goutte
+[zend]
+    git=https://github.com/zendframework/zf2.git
+    target=/zend
+
+[buzz]
+    git=https://github.com/kriswallsmith/Buzz.git
+    target=/buzz
+[SahiClient]
+    git=https://github.com/Behat/SahiClient
+    target=/behat/sahi
+
+[MinkBundle]
+    git=https://github.com/Behat/MinkBundle.git
+    target=/bundles/Behat/MinkBundle
+--------------------------------
+
+2. Registrar las librerías en el archivo app/autoload.php
+--------------------------------
+    'Behat\Gherkin'    => __DIR__.'/../vendor/behat/gherkin/src',
+    'Behat\Behat'      => __DIR__.'/../vendor/behat/behat/src',
+    'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
+    'Behat\Mink'       => __DIR__.'/../vendor/behat/mink/src',
+
+    // if you want to use GoutteDriver
+    'Goutte'           => __DIR__.'/../vendor/goutte/src',
+    'Zend'             => __DIR__.'/../vendor/zend/library',
+
+    // if you want to use SahiDriver
+    'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
+    'Buzz'             => __DIR__.'/../vendor/buzz/lib',
+    
+    'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
+--------------------------------
+
+3. Registrar las librerías en el archivo app/AppKernel.php
+--------------------------------
+		if ('test' === $this->getEnvironment()) {
+			$bundles[] = new Behat\BehatBundle\BehatBundle();
+			$bundles[] = new Behat\MinkBundle\MinkBundle();
+		}	
+--------------------------------
+
+4. Instalar las librerías
+$ php bin/vendors install
+
+5. Crear una clase FeatureContext para AcmeDemoBundle
+$ app/console -e=test behat --init @AcmeDemoBundle
+
+6. Configurar el archivo app/config/config_test.yml para Mink
+--------------------------------
+mink:
+    base_url:   http://www.symfony-madrid.dev/app_test.php
+    default_session:    goutte
+    goutte:     ~
+    sahi:       ~
+--------------------------------
+

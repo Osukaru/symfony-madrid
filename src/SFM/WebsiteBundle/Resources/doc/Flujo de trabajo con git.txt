@@ -1,0 +1,20 @@
+********************************
+*** Flujo de trabajo con Git ***
+********************************
+
+ 1. git checkout -b new_branch
+ 2. ¡Programar!
+ 3. git status
+ 4. git add -p
+ 5. git commit -m "Message"
+ 6. Ir al paso 3, repetir hasta que no haya cambios pendientes de confirmar
+ 7. Ir al paso 2, repetir hasta que esta rama no necesite más código
+ 8. git checkout master (u otra rama de integración)
+ 9. git merge new_branch
+10. git push origin master
+11. Si el git push falla:
+    1. git fetch origin
+    2. git rebase origin/master
+    3. git push origin master
+12. git branch -d new_branch
+
