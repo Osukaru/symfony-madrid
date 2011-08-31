@@ -330,7 +330,7 @@ nav ul li a: hover {
 	color: #CC3333;
 }
 
-nav ul li a.current {
+nav ul li.current a{
 	color: #CC3333;
 }
 

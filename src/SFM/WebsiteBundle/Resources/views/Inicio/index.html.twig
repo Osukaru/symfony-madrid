@@ -1,0 +1,28 @@
+{% extends 'SFMWebsiteBundle::layout.html.twig' %}
+{% block content %}
+					<section class="group1">
+					<h3>¿Quiénes somos?</h3>
+					<p>"Symfony Madrid" es un grupo de personas creativas, innovadoras y entusiastas que han apostado por el framework Symfony para sus desarrollos web y desean reunirse para intercambiar ideas y crear un conocimiento común.</p>
+					<img class="photo_hover3" src={{ asset('bundles/sfmwebsite/images/foto-grupo.jpg') }} width="240" height="180" alt="picture1"/>
+					</section>
+					<section class="group2">
+					<h3>Próxima Reunión</h3>
+					<ul>
+					 <li><strong>Fecha:</strong> 31 de Agosto de 2.011</li>
+					 <li><strong>Hora:</strong> 18:30</li>
+					 <li><strong>Lugar:</strong> Ciball<br />Calle Corredera Baja de San Pablo, 41<br />28004 Madrid</li>
+					</ul>
+					<iframe class="photo_hover3" width="240" height="214" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Calle+Corredera+Baja+de+San+Pablo,+41+28004+Madrid&amp;aq=&amp;sll=40.422334,-3.70404&amp;sspn=0.010863,0.01929&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Calle+Corredera+Baja+de+San+Pablo,+41,+28004+Madrid,+Comunidad+de+Madrid&amp;ll=40.422318,-3.704023&amp;spn=0.013983,0.020685&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.es/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Calle+Corredera+Baja+de+San+Pablo,+41+28004+Madrid&amp;aq=&amp;sll=40.422334,-3.70404&amp;sspn=0.010863,0.01929&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Calle+Corredera+Baja+de+San+Pablo,+41,+28004+Madrid,+Comunidad+de+Madrid&amp;ll=40.422318,-3.704023&amp;spn=0.013983,0.020685&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+					</section>
+					<section class="group3">
+					<h3>Asistentes</h3>
+					<ul>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/oscar.jpg') }} width="32" height="32" alt="oscar"/><span>Óscar López</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/moises.jpg') }} width="32" height="32" alt="moises"/><span>Moisés Gallego</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/daniel.jpg') }} width="32" height="32" alt="daniel"/><span>Daniel González</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/carlos.png') }} width="32" height="32" alt="carlos"/><span>Carlos Benítez</span></li>
+					</ul>
+					<a href="#"><span class="button">¡Apúntate!</span></a>   
+					</section>
+
+{% endblock %}

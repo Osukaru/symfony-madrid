@@ -18,7 +18,9 @@ class MainMenu extends Menu
 
         $this->setCurrentUri($request->getRequestUri());
 
-        $this->addChild('Home', $router->generate('inicio', array('name' => 'Osukaru')));
-        // ... add more children
+		$this->addChild('Inicio', $router->generate('inicio'));
+        $this->addChild('Blog', $router->generate('blog'));
+        $this->addChild('Proyectos', $router->generate('proyectos'));
+        $this->addChild('Personas', $router->generate('personas'));
     }
 }
