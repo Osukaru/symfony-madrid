@@ -3,33 +3,32 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
 		<title>Symfony Madrid</title>
-		<link rel="icon" href="images/favicon.gif" type="image/x-icon"/>
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
-		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-		<link rel="author" href="humans.txt" />   
+		<link rel="shortcut icon" href={{ asset('bundles/sfmwebsite/favicon.ico') }} type="image/x-icon"/> 
+		<link rel="stylesheet" type="text/css" href={{ asset('bundles/sfmwebsite/css/styles.css') }} />
+		<link rel="author" href={{ asset('bundles/sfmwebsite/human.txt') }} />   
 	</head>
 
 	<body>
-	  <a href="http://github.com/Osukaru/symfony-madrid"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/forkme_on_github.png" alt="Fork me on GitHub" /></a>
+	  <a href="http://github.com/symfony-madrid/symfony-madrid"><img style="position: absolute; top: 0; right: 0; border: 0;" src={{ asset('bundles/sfmwebsite/images/forkme_on_github.png') }} alt="Fork me on GitHub" /></a>
 		<div class="bg">
 			<!--start container-->
 			<div id="container">
 				<!--start header-->
 				<header>
 					<!--start logo-->
-					<a href="#" id="logo"><img src="images/titulo-symfony-madrid.png" width="550" height="150" alt="logo"/></a>
+					<a href="#" id="logo"><img src={{ asset('bundles/sfmwebsite/images/titulo-symfony-madrid.png') }} width="550" height="150" alt="logo"/></a>
 					<!--end logo-->
 
 					<section class="social">
 						<ul>
-							<li><a href="http://www.facebook.com/pages/Symfony-Madrid/263459737000849" id="facebook"><img src="images/facebook.png" width="64" height="64" alt="facebook"/></a></li>
-							<li><a href="http://twitter.com/#!/symfony_madrid" id="twitter"><img src="images/twitter.png" width="64" height="64" alt="twitter"/></a></li>
-							<li><a href="https://plus.google.com/110459827478804956885/about" id="google_plus"><img src="images/google_plus.png" width="64" height="64" alt="google plus"/></a></li>
-							<li><a href="https://github.com/organizations/symfony-madrid" id="github"><img src="images/github.png" width="64" height="64" alt="github"/></a></li>
-							<li><a href="#" id="rss"><img src="images/rss.png" width="64" height="64" alt="rss"/></a></li>
+							<li><a href="http://www.facebook.com/pages/Symfony-Madrid/263459737000849" id="facebook"><img src={{ asset('bundles/sfmwebsite/images/facebook.png') }} width="64" height="64" alt="facebook"/></a></li>
+							<li><a href="http://twitter.com/#!/symfony_madrid" id="twitter"><img src={{ asset('bundles/sfmwebsite/images/twitter.png') }} width="64" height="64" alt="twitter"/></a></li>
+							<li><a href="https://plus.google.com/110459827478804956885/about" id="google_plus"><img src={{ asset('bundles/sfmwebsite/images/google_plus.png') }} width="64" height="64" alt="google plus"/></a></li>
+							<li><a href="https://github.com/organizations/symfony-madrid" id="github"><img src={{ asset('bundles/sfmwebsite/images/github.png') }} width="64" height="64" alt="github"/></a></li>
+							<li><a href="#" id="rss"><img src={{ asset('bundles/sfmwebsite/images/rss.png') }} width="64" height="64" alt="rss"/></a></li>
 						</ul>					
 					</section>
 					<!--start menu-->
@@ -49,7 +48,7 @@
 					<section class="group1">
 					<h3>¿Quiénes somos?</h3>
 					<p>"Symfony Madrid" es un grupo de personas creativas, innovadoras y entusiastas que han apostado por el framework Symfony para sus desarrollos web y desean reunirse para intercambiar ideas y crear un conocimiento común.</p>
-					<img class="photo_hover3" src="images/foto-grupo.jpg" width="240" height="180" alt="picture1"/>
+					<img class="photo_hover3" src={{ asset('bundles/sfmwebsite/images/foto-grupo.jpg') }} width="240" height="180" alt="picture1"/>
 					</section>
 					<section class="group2">
 					<h3>Próxima Reunión</h3>
@@ -63,10 +62,10 @@
 					<section class="group3">
 					<h3>Asistentes</h3>
 					<ul>
-					 <li class="persona"><img class="foto" src="images/oscar.jpg" width="32" height="32" alt="oscar"/><span>Óscar López</span></li>
-					 <li class="persona"><img class="foto" src="images/moises.jpg" width="32" height="32" alt="moises"/><span>Moisés Gallego</span></li>
-					 <li class="persona"><img class="foto" src="images/daniel.jpg" width="32" height="32" alt="daniel"/><span>Daniel González</span></li>
-					 <li class="persona"><img class="foto" src="images/carlos.png" width="32" height="32" alt="carlos"/><span>Carlos Benítez</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/oscar.jpg') }} width="32" height="32" alt="oscar"/><span>Óscar López</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/moises.jpg') }} width="32" height="32" alt="moises"/><span>Moisés Gallego</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/daniel.jpg') }} width="32" height="32" alt="daniel"/><span>Daniel González</span></li>
+					 <li class="persona"><img class="foto" src={{ asset('bundles/sfmwebsite/images/carlos.png') }} width="32" height="32" alt="carlos"/><span>Carlos Benítez</span></li>
 					</ul>
 					<a href="#"><span class="button">¡Apúntate!</span></a>   
 					</section>
@@ -77,7 +76,7 @@
 			<!--start footer-->
 			<footer>
 			<div class="container">  
-				<div id="FooterTwo"><a href="humans.txt" id="humantxt"><img src="images/humanstxt.gif" width="88" height="31" alt="humantxt"/><a href="#" id="iukanet"><img src="images/iukanet.png" width="144" height="40" alt="iukanet"/></a></div>
+				<div id="FooterTwo"><a href={{ asset('bundles/sfmwebsite/humans.txt') }} id="humantxt"><img src={{ asset('bundles/sfmwebsite/images/humanstxt.gif') }} width="88" height="31" alt="humantxt"/><a href="#" id="iukanet"><img src={{ asset('bundles/sfmwebsite/images/iukanet.png') }} width="144" height="40" alt="iukanet"/></a></div>
 			</div>
 			</footer>
 			<!--end footer-->
