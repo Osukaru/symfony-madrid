@@ -1,0 +1,39 @@
+Como colaborar con symfony-madrid
+
+1. "Forkear" el repositorio gihub
+
+Acudimos a la url del proyecto[1] y pulsamos "fork", para este paso es necesario 
+tener una cuenta GitHub
+
+2. Clonamos el repositorio
+[2] git clone git@github.com:[usuario-github]/symfony-madrid.git 
+
+3. Instalamos los vendor
+Descargamos las librerías de terceros.
+
+php bin/vendors install
+
+4. Realiza tus modificaciones
+
+
+5. Subelas a tu GitHub
+dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git add .
+dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git commit -m "modified next event info"
+dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git push
+Counting objects: 17, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 704 bytes, done.
+Total 9 (delta 6), reused 0 (delta 0)
+To git@github.com:desarrolla2/symfony-madrid.git
+   0f25b80..995c504  master -> master
+
+6. Promociona los cambios
+
+Accede en tu cuenta de GitHub al repositorio
+
+[2] https://github.com/[usuario-github]/symfony-madrid 
+
+Pulsa el botón "Pull Request"
+Completa el mensaje
+Pulsa el botón "Send Pull Request"
