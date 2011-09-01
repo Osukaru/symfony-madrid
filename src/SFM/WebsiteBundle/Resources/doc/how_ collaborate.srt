@@ -34,6 +34,8 @@ Subelas a tu GitHub
 
 git checkout "master"
 
+git pull
+
 git merge desarrolla2_documentation
 
 git push
