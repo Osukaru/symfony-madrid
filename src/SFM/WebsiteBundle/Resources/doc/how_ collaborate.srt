@@ -1,0 +1,54 @@
+Como colaborar con symfony-madrid
+=================================
+
+
+Forkear el repositorio gihub
+------------------------------
+
+Acudimos a la url del _proyecto[ https://github.com/symfony-madrid/symfony-madrid 
+y pulsamos "fork", para este paso es necesario tener una cuenta GitHub
+
+Clonamos el repositorio
+-----------------------
+
+git clone git@github.com:[usuario-github]/symfony-madrid.git [1]
+
+Instalamos los vendor
+---------------------
+
+Descargamos las librerías de terceros.
+
+php bin/vendors install
+
+Crea una rama y añade tus modificaciones
+----------------------------------------
+
+git checkout -b "desarrolla2_documentation"
+
+git add .
+
+git commit -a -m 'add how_colaborate.rst'
+
+Subelas a tu GitHub
+-------------------
+
+git checkout "master"
+
+git pull
+
+git merge desarrolla2_documentation
+
+git push
+
+
+Promociona los cambios
+----------------------
+
+Accede en tu cuenta de GitHub al repositorio: https://github.com/[usuario-github]/symfony-madrid [1]
+
+1. Pulsa el botón "Pull Request"
+2. Completa el mensaje
+3. Pulsa el botón "Send Pull Request"
+
+
+[1] Cambiar [usuario-github] por tu usuario en GitHub
