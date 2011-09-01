@@ -1,44 +1,52 @@
 Como colaborar con symfony-madrid
+=================================
 
-1. "Forkear" el repositorio gihub
 
-Acudimos a la url del proyecto[1] y pulsamos "fork", para este paso es necesario 
-tener una cuenta GitHub
+Forkear el repositorio gihub
+------------------------------
 
-2. Clonamos el repositorio
-[2] git clone git@github.com:[usuario-github]/symfony-madrid.git 
+Acudimos a la url del _proyecto[ https://github.com/symfony-madrid/symfony-madrid 
+y pulsamos "fork", para este paso es necesario tener una cuenta GitHub
 
-3. Instalamos los vendor
+Clonamos el repositorio
+-----------------------
+
+git clone git@github.com:[usuario-github]/symfony-madrid.git [1]
+
+Instalamos los vendor
+---------------------
+
 Descargamos las librerías de terceros.
 
 php bin/vendors install
 
-4. Crea una rama y añade tus modificaciones
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git checkout -b "desarrolla2_documentation"
-Switched to a new branch 'desarrolla2_documentation'
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git add .
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git commit -a -m 'add how_colaborate.rst'
-[desarrolla2_documentation e4fdf0b] add how_colaborate.rst
- 1 files changed, 39 insertions(+), 0 deletions(-)
+Crea una rama y añade tus modificaciones
+----------------------------------------
 
-5. Subelas a tu GitHub
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git checkout "master"
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git merge desarrolla2_documentation
-dgonzalez@jules:~/NetBeansProjects/symfony-madrid$ git push
-Counting objects: 17, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (9/9), 704 bytes, done.
-Total 9 (delta 6), reused 0 (delta 0)
-To git@github.com:desarrolla2/symfony-madrid.git
-   0f25b80..995c504  master -> master
+git checkout -b "desarrolla2_documentation"
 
-6. Promociona los cambios
+git add .
 
-Accede en tu cuenta de GitHub al repositorio
+git commit -a -m 'add how_colaborate.rst'
 
-[2] https://github.com/[usuario-github]/symfony-madrid 
+Subelas a tu GitHub
+-------------------
 
-Pulsa el botón "Pull Request"
-Completa el mensaje
-Pulsa el botón "Send Pull Request"
+git checkout "master"
+
+git merge desarrolla2_documentation
+
+git push
+
+
+Promociona los cambios
+----------------------
+
+Accede en tu cuenta de GitHub al repositorio: https://github.com/[usuario-github]/symfony-madrid [1]
+
+1. Pulsa el botón "Pull Request"
+2. Completa el mensaje
+3. Pulsa el botón "Send Pull Request"
+
+
+[1] Cambiar [usuario-github] por tu usuario en GitHub
