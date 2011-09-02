@@ -7,11 +7,6 @@ Feature: Knp menu
     Given I am on "/"
     Then I should see "Inicio"
 
-  Scenario: User clicks "Blog" link on home page
-    Given I am on "/"
-    When I follow "Blog"
-    Then I should see "En construcción"
-
   Scenario: User clicks on ... with Bob link
     Given I am on "/"
     When I follow "Blog"
