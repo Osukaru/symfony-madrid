@@ -15,6 +15,20 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Knp'              => __DIR__.'/../vendor/bundles',
+    'Behat\Gherkin' => __DIR__.'/../vendor/behat/gherkin/src',
+    'Behat\Behat' => __DIR__.'/../vendor/behat/behat/src',
+    'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
+    'Behat\Mink' => __DIR__.'/../vendor/behat/mink/src',
+
+    // if you want to use GoutteDriver
+    'Goutte' => __DIR__.'/../vendor/goutte/src',
+    'Zend' => __DIR__.'/../vendor/zend/library',
+
+    // if you want to use SahiDriver
+    'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
+    'Buzz' => __DIR__.'/../vendor/buzz/lib',
+    
+    'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
