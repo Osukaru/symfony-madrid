@@ -1,23 +1,17 @@
-Feature: Knp menu
-  In order to add a sexy menus to site
-  As a Symfony2 developer
-  I need to be able to use KnpMenuBundle
+# language: es
+Característica: Knp menu
+  Para disponer de unos elegantes menús en nuestra aplicación
+  Como desarrollador en Symfony2  
+  Necesito ser capaz de utilizar KnpMenuBundle 
 
-  Scenario: There is a "Inicio" link on home page
-    Given I am on "/"
-    Then I should see "Inicio"
+  Escenario: Existe un enlace "Inicio" en la página principal 
+    Dado Yo estoy en "/"
+    Entonces Yo debo ver "Inicio"   
 
-  Scenario: User clicks on ... with Bob link
-    Given I am on "/"
-    When I follow "Blog"
-<<<<<<< HEAD
-	And I follow "Proyectos"
-	And I follow "Personas"
-	And I follow "Inicio"
-	Then I should see "¿Quiénes somos?"
-=======
-    And I follow "Proyectos"
-    And I follow "Personas"
-    And I follow "Inicio"
-    Then I should see "¿Quiénes somos?"
->>>>>>> 082e208cbeb6ecf6acad5ec05dfe83f14ef188eb
+  Escenario: Puedo navegar por todos los enlaces
+    Dado Yo estoy en "/"
+    Cuando Yo sigo "Blog"
+    Y Yo sigo "Proyectos"
+    Y Yo sigo "Personas"
+    Y Yo sigo "Inicio"
+    Entonces Yo debo ver "¿Quiénes somos?"

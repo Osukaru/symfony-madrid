@@ -13,7 +13,6 @@ use Behat\Gherkin\Node\PyStringNode,
 //
 // Require 3rd-party libraries here:
 //
-<<<<<<< HEAD
 //   require_once 'PHPUnit/Autoload.php';
 //   require_once 'PHPUnit/Framework/Assert/Functions.php';
 //
@@ -21,21 +20,11 @@ use Behat\Gherkin\Node\PyStringNode,
 /**
  * Feature context.
  */
-=======
-// require_once 'PHPUnit/Autoload.php';
-// require_once 'PHPUnit/Framework/Assert/Functions.php';
-//
-
-/**
-* Feature context.
-*/
->>>>>>> 082e208cbeb6ecf6acad5ec05dfe83f14ef188eb
 class FeatureContext extends MinkContext //BehatContext //MinkContext if you want to test web
 {
 //
 // Place your definition and hook methods here:
 //
-<<<<<<< HEAD
 //    /**
 //     * @Given /^I have done something with "([^"]*)"$/
 //     */
@@ -44,15 +33,5 @@ class FeatureContext extends MinkContext //BehatContext //MinkContext if you wan
 //        $container = $this->getContainer();
 //        $container->get('some_service')->doSomethingWith($argument);
 //    }
-=======
-// /**
-// * @Given /^I have done something with "([^"]*)"$/
-// */
-// public function iHaveDoneSomethingWith($argument)
-// {
-// $container = $this->getContainer();
-// $container->get('some_service')->doSomethingWith($argument);
-// }
->>>>>>> 082e208cbeb6ecf6acad5ec05dfe83f14ef188eb
 //
 }
