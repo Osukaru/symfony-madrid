@@ -58,6 +58,49 @@
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.0
 
+[gherkin]
+    git=https://github.com/Behat/Gherkin.git
+    target=/behat/gherkin
+
+[behat]
+    git=https://github.com/Behat/Behat.git
+    target=/behat/behat
+
+[BehatBundle]
+    git=https://github.com/Behat/BehatBundle.git
+    target=/bundles/Behat/BehatBundle
+
+[mink]
+    git=https://github.com/Behat/Mink.git
+    target=/behat/mink
+
+[goutte]
+    git=https://github.com/fabpot/Goutte.git
+    target=/goutte
+
+[zend]
+    git=https://github.com/zendframework/zf2.git
+    target=/zend
+
+[buzz]
+    git=https://github.com/kriswallsmith/Buzz.git
+    target=/buzz
+[SahiClient]
+    git=https://github.com/Behat/SahiClient
+    target=/behat/sahi
+
+[MinkBundle]
+    git=https://github.com/Behat/MinkBundle.git
+    target=/bundles/Behat/MinkBundle
+
+[MenuBundle]
+    git=https://github.com/knplabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+
+[FOSUserBundle]
+    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
+    target=bundles/FOS/UserBundle
+
 [MenuBundle]
     git=https://github.com/knplabs/KnpMenuBundle.git
     target=/bundles/Knp/Bundle/MenuBundle
