@@ -29,6 +29,8 @@ $loader->registerNamespaces(array(
     'Buzz' => __DIR__.'/../vendor/buzz/lib',
     
     'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
+    
+    'FOS'               => __DIR__.'/../vendor/bundles'
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
@@ -58,3 +60,4 @@ AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/M
 require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
 
+    
