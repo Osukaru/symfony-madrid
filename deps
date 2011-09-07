@@ -98,7 +98,7 @@
     target=/bundles/Knp/Bundle/MenuBundle
 
 [FOSUserBundle]
-    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
+    git=https://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=bundles/FOS/UserBundle
 
 [MenuBundle]
