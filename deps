@@ -57,7 +57,6 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.0
-<<<<<<< HEAD
 
 [gherkin]
     git=https://github.com/Behat/Gherkin.git
@@ -78,6 +77,7 @@
 [goutte]
     git=https://github.com/fabpot/Goutte.git
     target=/goutte
+
 [zend]
     git=https://github.com/zendframework/zf2.git
     target=/zend
@@ -100,5 +100,3 @@
 [FOSUserBundle]
     git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=bundles/FOS/UserBundle
-=======
->>>>>>> master
