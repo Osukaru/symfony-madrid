@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new SFM\WebsiteBundle\SFMWebsiteBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new SFM\UserBundle\UserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
