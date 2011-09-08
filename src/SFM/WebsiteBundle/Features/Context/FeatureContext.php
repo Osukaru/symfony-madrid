@@ -34,4 +34,13 @@ class FeatureContext extends MinkContext //BehatContext //MinkContext if you wan
 //        $container->get('some_service')->doSomethingWith($argument);
 //    }
 //
+    /**
+     * @Given /^Yo veo "([^"]*)"$/
+     */
+    public function yoVeo($page)
+    {
+        print_r($this->getMink()->getSession('goutte')->getPage()->getHtml($this->locatePath($page)));
+        //print_r($this->getMink()->getSession()->getPage()->getContent());
+    }
+
 }

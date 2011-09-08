@@ -14,7 +14,7 @@ swiftmailer:
     disable_delivery: true
 
 mink:
-    base_url: http://www.symfony-madrid.dev/app_test.php
+    base_url: http://www.symfony-madrid.dev
     default_session: goutte
     goutte: ~
     sahi: ~

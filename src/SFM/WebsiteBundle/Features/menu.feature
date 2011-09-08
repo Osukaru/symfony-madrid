@@ -4,6 +4,10 @@ Característica: Knp menu
   Como desarrollador en Symfony2  
   Necesito ser capaz de utilizar KnpMenuBundle 
 
+  Escenario: Prueba para saber qué es lo que ve el crawler
+    Dado Yo estoy en "/"
+    Entonces Yo veo "/"
+    
   Escenario: Existe un enlace "Inicio" en la página principal 
     Dado Yo estoy en "/"
     Entonces Yo debo ver "Inicio"   
