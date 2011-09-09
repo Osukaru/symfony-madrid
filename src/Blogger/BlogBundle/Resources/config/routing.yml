@@ -1,0 +1,6 @@
+# src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+    requirements:
+        _method:  GET
