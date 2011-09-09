@@ -36,7 +36,7 @@ Symfony Madrid
 
 ### Configurar Apache (Ubuntu)
 
-1. Editar el archivo hosts:
+Editar el archivo hosts:
 
 	$ sudo gedit /etc/hosts
 
@@ -44,7 +44,7 @@ y añadir la línea siguiente:
 
 	127.0.0.1   www.symfony-madrid.dev
 
-2. Configuramos un VirtualHost para el nuevo dominio, editando el archivo (nuevo) www.symfony-madrid.dev del directorio sites-available de apache2:
+Configuramos un VirtualHost para el nuevo dominio, editando el archivo (nuevo) www.symfony-madrid.dev del directorio sites-available de apache2:
 
 	$ sudo gedit /etc/apache2/sites-available/www.symfony-madrid.dev
 
@@ -61,34 +61,34 @@ con el siguiente contenido:
 			</Directory>
 	</VirtualHost>
 
-3. Habilitamos el nuevo VirtualHost:
+Habilitamos el nuevo VirtualHost:
 
 	$ sudo a2ensite www.symfony-madrid.dev
 
-4. Reiniciamos apache:
+Reiniciamos apache:
 
 	$ sudo /etc/init.d/apache2 restart
 
-5. Comprobamos que el resto de la configuración sea correcta
+Comprobamos que el resto de la configuración sea correcta
 
 	http://www.symfony-madrid.dev/config.php
 
 ### Configurar los permisos de app/cache y app/logs (Ubuntu)
 
-1. Instalar el paquete acl
+Instalar el paquete acl
 
 	sudo apt-get install acl
 
-2. Editar el fichero /etc/fstab y añadir la opción "acl" a la partición donde tenemos nuestro proyecto
+Editar el fichero /etc/fstab y añadir la opción "acl" a la partición donde tenemos nuestro proyecto
 
 	\# /home was on /dev/sda7 during installation
 	UUID=d027a8eb-e234-1c9f-aef1-43a7dd9a2345 /home    ext4   defaults,acl   0   2
 
-3. Reiniciar o volver a montar la partición:
+Reiniciar o volver a montar la partición:
 
 	sudo /bin/mount -o remount /home
 
-4. Otorgar los permisos a los directorios app/cache y app/logs
+Otorgar los permisos a los directorios app/cache y app/logs
 
 	sudo setfacl -R -m u:www-data:rwx -m u:miusuario:rwx app/cache app/logs
 	sudo setfacl -dR -m u:www-data:rwx -m u:miusuario:rwx app/cache app/logs
