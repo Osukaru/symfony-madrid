@@ -42,11 +42,11 @@ Symfony Madrid
 
 y añadir la línea siguiente:
 
-	127.0.0.1   www.psn.es
+	127.0.0.1   www.symfony-madrid.dev
 
 2. Configuramos un VirtualHost para el nuevo dominio, editando el archivo (nuevo) www.symfony-madrid.dev del directorio sites-available de apache2:
 
-	$ sudo gedit /etc/apache2/sites-available/www.psn.es
+	$ sudo gedit /etc/apache2/sites-available/www.symfony-madrid.dev
 
 con el siguiente contenido:
 
@@ -61,9 +61,9 @@ con el siguiente contenido:
 			</Directory>
 	</VirtualHost>
 
-3. Habilitamos el nuevo VirtualHost:i
+3. Habilitamos el nuevo VirtualHost:
 
-	$ sudo a2ensite www.psn.es
+	$ sudo a2ensite www.symfony-madrid.dev
 
 4. Reiniciamos apache:
 
@@ -81,10 +81,8 @@ con el siguiente contenido:
 
 2. Editar el fichero /etc/fstab y añadir la opción "acl" a la partición donde tenemos nuestro proyecto
 
-	...
 	# /home was on /dev/sda7 during installation
 	UUID=d027a8eb-e234-1c9f-aef1-43a7dd9a2345 /home    ext4   defaults,acl   0   2
-	...
 
 3. Reiniciar o volver a montar la partición:
 
@@ -95,5 +93,4 @@ con el siguiente contenido:
 	sudo setfacl -R -m u:www-data:rwx -m u:miusuario:rwx app/cache app/logs
 	sudo setfacl -dR -m u:www-data:rwx -m u:miusuario:rwx app/cache app/logs
  
-#### Más información en:
-[Setting up Permissions](http://symfony.com/doc/current/book/installation.html#configuration-and-setup)
+#### Más información en: [Setting up Permissions](http://symfony.com/doc/current/book/installation.html#configuration-and-setup)
