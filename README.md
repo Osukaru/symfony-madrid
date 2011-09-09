@@ -81,7 +81,7 @@ Instalar el paquete acl
 
 Editar el fichero /etc/fstab y añadir la opción "acl" a la partición donde tenemos nuestro proyecto
 
-	\# /home was on /dev/sda7 during installation
+	# /home was on /dev/sda7 during installation
 	UUID=d027a8eb-e234-1c9f-aef1-43a7dd9a2345 /home    ext4   defaults,acl   0   2
 
 Reiniciar o volver a montar la partición:
