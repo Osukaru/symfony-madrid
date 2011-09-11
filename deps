@@ -104,3 +104,10 @@
 [MenuBundle]
     git=https://github.com/knplabs/KnpMenuBundle.git
     target=/bundles/Knp/Bundle/MenuBundle
+
+[doctrine-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
+
+[DoctrineFixturesBundle]
+    git=http://github.com/symfony/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle

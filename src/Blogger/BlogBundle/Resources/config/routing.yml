@@ -1,3 +1,10 @@
+BloggerBlogBundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: BloggerBlogBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+
 BloggerBlogBundle_contact:
     pattern:  /contact
     defaults: { _controller: BloggerBlogBundle:Page:contact }
