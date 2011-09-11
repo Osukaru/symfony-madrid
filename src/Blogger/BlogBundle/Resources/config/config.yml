@@ -2,3 +2,6 @@
 parameters:
     # Blogger contact email address
     blogger_blog.emails.contact_email: osukaru@symfony-madrid.es
+
+    # Blogger max latest comments
+    blogger_blog.comments.latest_comment_limit: 10
