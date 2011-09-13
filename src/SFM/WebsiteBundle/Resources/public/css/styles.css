@@ -424,3 +424,16 @@ nav ul li.current a{
   bottom: 10px;
   left: 10px;
 }
+
+/*****************************
+           SYMBLOG
+*****************************/
+
+.main-col { width: 700px; display: inline-block; float: left; border-right: 1px solid #ccc; padding: 20px; margin-bottom: 20px; }
+.sidebar { width: 239px; padding: 10px; display: inline-block; }
+
+.main-col a { color: #F48A00; }
+.main-col h1,
+.main-col h2
+    { line-height: 1.2em; font-size: 32px; margin-bottom: 10px; font-weight: normal; color: #F48A00; }
+.main-col p { line-height: 1.5em; margin-bottom: 20px; }

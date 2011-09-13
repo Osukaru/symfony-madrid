@@ -1,15 +1,17 @@
 <?php
 
-namespace SFM\WebsiteBundle\Controller;
+namespace SFM\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class BlogController extends Controller
+class PageController extends Controller
 {
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/", name="blog")
+     * @Method({"GET"})
      * @Template()
      */
     public function indexAction()

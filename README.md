@@ -13,11 +13,7 @@ Symfony Madrid
 	
 	cp app/config/parameters.ini.dist app/config/parameters.ini 
 
-### Crear base de datos
-
-	mysql -u usuario -p password -e "create database symfony-madrid"
-
-### Configurar la base de datos en el parameters.ini
+### Configurar la base de datos y el servidor de correo en el parameters.ini
 
     database_driver = pdo_mysql
     database_host = localhost
@@ -26,13 +22,38 @@ Symfony Madrid
     database_user = usuario
     database_password = password
 
+	mailer_transport="gmail"
+	mailer_encryption="ssl"
+	mailer_auth_mode="login"
+	mailer_host="smtp.gmail.com"
+	mailer_user="usuario"
+	mailer_password="password"
+
 ### Recuperar las dependencias
 
 	php bin/vendors install
 
+### Crear base de datos
+
+	mysql -u usuario -p password -e "create database symfony-madrid"
+
+o
+
+	php app/console doctrine:database:create
+
 ### Generar el modelo de datos
 
+La primera vez
+
+	php app/console doctrine:schema:create
+
+y para actualizar
+
 	php app/console doctrine:schema:update --force
+
+### Cargar los datos de prueba
+
+	php app/console doctrine:fixtures:load
 
 ### Configurar Apache (Ubuntu)
 

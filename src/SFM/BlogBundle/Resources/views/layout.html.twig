@@ -1,0 +1,9 @@
+{% extends 'SFMWebsiteBundle::layout.html.twig' %}
+{% block content %}
+  <section class="main-col">
+    {% block body %}{% endblock %}
+  </section>
+  <aside class="sidebar">
+    {% block sidebar %}Sidebar content{% endblock %}
+  </aside>
+{% endblock %}

@@ -1,3 +1,12 @@
+SFMBlogBundle:
+    resource: "@SFMBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /blog
+
+BloggerBlogBundle:
+    resource: "@BloggerBlogBundle/Resources/config/routing.yml"
+    prefix:   /symblog
+
 UserBundle:
     resource: "@UserBundle/Controller/"
     type:     annotation
