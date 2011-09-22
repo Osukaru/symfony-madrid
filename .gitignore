@@ -4,6 +4,7 @@
 /app/logs/*
 /vendor/
 /app/config/parameters.ini
+/app/phpunit.xml
 #Si trabajamos con netbeans quitamos el directorio de proyecto
 nbproject/
 #Si trabajamos con emacs
