@@ -1,0 +1,13 @@
+services:
+    sfm_website.menu_builder:
+        class: SFM\WebsiteBundle\Menu\MenuBuilder
+        arguments: ["@knp_menu.factory"]
+
+    sfm_website.menu.principal:
+        class: Knp\Menu\MenuItem # the service definition requires setting the class
+        factory_service: sfm_website.menu_builder
+        factory_method: createMenuPrincipal
+        arguments: ["@request"]
+        scope: request # needed as we have the request as a dependency here
+        tags:
+            - { name: knp_menu.menu, alias: principal } # The alias is what is used to retrieve the menu
