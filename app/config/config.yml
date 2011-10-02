@@ -1,7 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
-    - { resource: "@SFMWebsiteBundle/Resources/config/menu.xml" }
     - { resource: @BloggerBlogBundle/Resources/config/config.yml }
 
 framework:
