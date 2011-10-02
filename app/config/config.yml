@@ -1,5 +1,5 @@
 imports:
-    - { resource: parameters.ini }
+    - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: "@SFMWebsiteBundle/Resources/config/menu.xml" }
     - { resource: @BloggerBlogBundle/Resources/config/config.yml }

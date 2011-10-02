@@ -3,7 +3,7 @@
 /app/cache/*
 /app/logs/*
 /vendor/
-/app/config/parameters.ini
+/app/config/parameters.yml
 /app/phpunit.xml
 /phpunit-report/
 #Si trabajamos con netbeans quitamos el directorio de proyecto
