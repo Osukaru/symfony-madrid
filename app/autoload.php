@@ -18,7 +18,7 @@ $loader->registerNamespaces(array(
 
     // if you want to use GoutteDriver
     'Goutte'           => __DIR__.'/../vendor/goutte/src',
-    'Zend'             => __DIR__.'/../vendor/zend/library',
+    //'Zend'             => __DIR__.'/../vendor/zend/library',
 
     // if you want to use SahiDriver
     'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',

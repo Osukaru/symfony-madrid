@@ -62,3 +62,12 @@ jms_security_extra:
 # KnpMenuBundle
 knp_menu:
     twig: true
+
+# FOSUserBundle Configuration
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: SFM\UserManagerBundle\Entity\User
+    group:
+      group_class: SFM\UserManagerBundle\Entity\Group
+
