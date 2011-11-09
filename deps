@@ -58,6 +58,7 @@
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
 
+<<<<<<< HEAD
 [gherkin]
     git=https://github.com/Behat/Gherkin.git
     target=/behat/gherkin
@@ -117,3 +118,12 @@
 [DoctrineMigrationsBundle]
     git=http://github.com/symfony/DoctrineMigrationsBundle.git
     target=/bundles/Symfony/Bundle/DoctrineMigrationsBundle
+=======
+[MenuBundle]
+    git=https://github.com/knplabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+
+[FOSUserBundle]
+    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
+    target=bundles/FOS/UserBundle
+>>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728

@@ -63,6 +63,7 @@ jms_security_extra:
 
 # KnpMenuBundle
 knp_menu:
+<<<<<<< HEAD
     twig: true  # set to false to disable the Twig extension and the TwigRenderer
     templating: false # if true, enables the helper for PHP templates
     default_renderer: twig # The renderer to use, list is also available by default
@@ -71,3 +72,15 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: SFM\UserBundle\Entity\User
+=======
+    twig: true
+
+# FOSUserBundle Configuration
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: SFM\UserManagerBundle\Entity\User
+    group:
+      group_class: SFM\UserManagerBundle\Entity\Group
+
+>>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728

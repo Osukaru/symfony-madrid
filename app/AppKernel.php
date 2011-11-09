@@ -20,15 +20,20 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new SFM\WebsiteBundle\SFMWebsiteBundle(),
+<<<<<<< HEAD
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new SFM\UserBundle\UserBundle(),
             new Blogger\BlogBundle\BloggerBlogBundle(),
             new SFM\BlogBundle\SFMBlogBundle(),
+=======
+			      new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new SFM\UserManagerBundle\SFMUserManagerBundle(),
+>>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
