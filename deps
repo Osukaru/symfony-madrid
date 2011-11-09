@@ -58,67 +58,6 @@
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
 
-<<<<<<< HEAD
-[gherkin]
-    git=https://github.com/Behat/Gherkin.git
-    target=/behat/gherkin
-
-[behat]
-    git=https://github.com/Behat/Behat.git
-    target=/behat/behat
-
-[BehatBundle]
-    git=https://github.com/Behat/BehatBundle.git
-    target=/bundles/Behat/BehatBundle
-
-[mink]
-    git=https://github.com/Behat/Mink.git
-    target=/behat/mink
-
-[goutte]
-    git=https://github.com/fabpot/Goutte.git
-    target=/goutte
-
-[zend]
-    git=https://github.com/zendframework/zf2.git
-    target=/zend
-
-[buzz]
-    git=https://github.com/kriswallsmith/Buzz.git
-    target=/buzz
-[SahiClient]
-    git=https://github.com/Behat/SahiClient
-    target=/behat/sahi
-
-[MinkBundle]
-    git=https://github.com/Behat/MinkBundle.git
-    target=/bundles/Behat/MinkBundle
-
-[KnpMenu]
-    git=https://github.com/knplabs/KnpMenu.git
-
-[KnpMenuBundle]
-    git=https://github.com/knplabs/KnpMenuBundle.git
-    target=bundles/Knp/Bundle/MenuBundle
-
-[FOSUserBundle]
-    git=https://github.com/FriendsOfSymfony/FOSUserBundle.git
-    target=bundles/FOS/UserBundle
-
-[doctrine-fixtures]
-    git=http://github.com/doctrine/data-fixtures.git
-
-[DoctrineFixturesBundle]
-    git=http://github.com/symfony/DoctrineFixturesBundle.git
-    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
-
-[doctrine-migrations]
-    git=http://github.com/doctrine/migrations.git
-
-[DoctrineMigrationsBundle]
-    git=http://github.com/symfony/DoctrineMigrationsBundle.git
-    target=/bundles/Symfony/Bundle/DoctrineMigrationsBundle
-=======
 [MenuBundle]
     git=https://github.com/knplabs/KnpMenuBundle.git
     target=/bundles/Knp/Bundle/MenuBundle
@@ -126,4 +65,3 @@
 [FOSUserBundle]
     git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=bundles/FOS/UserBundle
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728

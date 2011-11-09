@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-SFMBlogBundle:
-    resource: "@SFMBlogBundle/Controller/"
-    type:     annotation
-    prefix:   /blog
-
-BloggerBlogBundle:
-    resource: "@BloggerBlogBundle/Resources/config/routing.yml"
-    prefix:   /symblog
-
-UserBundle:
-    resource: "@UserBundle/Controller/"
-=======
 SFMUserManagerBundle:
     resource: "@SFMUserManagerBundle/Controller/"
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
     type:     annotation
     prefix:   /
 
@@ -21,11 +7,8 @@ SFMWebsiteBundle:
     resource: "@SFMWebsiteBundle/Controller/"
     type:     annotation
     prefix:   /
-<<<<<<< HEAD
-    
-=======
+
 # app/config/routing.yml
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
@@ -40,13 +23,6 @@ fos_user_register:
 fos_user_resetting:
     resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
     prefix: /resetting
-<<<<<<< HEAD
-
-fos_user_change_password:
-    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix: /change-password    
-=======
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
 
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"

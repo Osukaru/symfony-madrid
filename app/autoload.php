@@ -16,23 +16,6 @@ $loader->registerNamespaces(array(
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
-<<<<<<< HEAD
-    'Knp\Bundle' => __DIR__.'/../vendor/bundles',
-    'Knp\Menu'   => __DIR__.'/../vendor/KnpMenu/src',
-    'Behat\Gherkin' => __DIR__.'/../vendor/behat/gherkin/src',
-    'Behat\Behat' => __DIR__.'/../vendor/behat/behat/src',
-    'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
-    'Behat\Mink' => __DIR__.'/../vendor/behat/mink/src',
-
-    // if you want to use GoutteDriver
-    'Goutte' => __DIR__.'/../vendor/goutte/src',
-    'Zend' => __DIR__.'/../vendor/zend/library',
-
-    // if you want to use SahiDriver
-    'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
-    'Buzz' => __DIR__.'/../vendor/buzz/lib',
-    
-=======
     'FOS'              => __DIR__.'/../vendor/bundles',
 
     // if you want to use GoutteDriver
@@ -43,7 +26,6 @@ $loader->registerNamespaces(array(
     'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
     'Buzz'             => __DIR__.'/../vendor/buzz/lib',
 
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
     'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
     
     'FOS'               => __DIR__.'/../vendor/bundles'

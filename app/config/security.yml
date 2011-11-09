@@ -1,57 +1,22 @@
 security:
     providers:
         fos_userbundle:
-<<<<<<< HEAD
-            id: fos_user.user_manager                
-=======
             id: fos_user.user_manager
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
 
     firewalls:
         main:
             pattern: ^/
-<<<<<<< HEAD
             form_login:
                 provider: fos_userbundle
             logout:       true
             anonymous:    true
-            
-        dev:
-            pattern:  ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-
-        login:
-            pattern:  ^/demo/secured/login$
-            security: false
-
-        secured_area:
-            pattern:    ^/demo/secured/
-            form_login:
-                check_path: /demo/secured/login_check
-                login_path: /demo/secured/login
-            logout:
-                path:   /demo/secured/logout
-                target: /demo/
-=======
-            form_login:
-                provider: fos_userbundle
-            logout:       true
-            anonymous:    true
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
 
     access_control:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-<<<<<<< HEAD
-        
-    role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: ROLE_ADMIN        
-=======
 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
         ROLE_SUPER_ADMIN: ROLE_ADMIN
->>>>>>> af269be9e7eb26f20deb0b55caa252bb8ff36728
